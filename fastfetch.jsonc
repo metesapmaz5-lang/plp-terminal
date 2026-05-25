@@ -1,0 +1,37 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "source": "\u001b[32m████╗ ██╗     ████╗\n██╔═██╗██║     ██╔═██╗\n████╔═╝██║     ████╔═╝\n██╔══╝ ██║     ██╔══╝ \n██║    ███████╗██║    \n╚═╝    ╚══════╝╚═╝    \u001b[0m",
+        "padding": {
+            "top": 1,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": " ➔ ",
+        "color": {
+            "keys": "green",
+            "title": "green"
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "terminal",
+        "cpu",
+        "memory",
+        "break",
+        // İşte burası en alttaki özel imzamız
+        {
+            "type": "custom",
+            "format": "\u001b[32mPowered by PLP\u001b[0m"
+        }
+    ]
+}
